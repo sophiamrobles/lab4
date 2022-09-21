@@ -8,13 +8,61 @@
     <body>
         <form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
             <fieldset>
-                <legend><strong>Colunteer Form</strong></legend>
+                <legend><strong><My Info></strong></legend>
                 <div>
                     <label>First Name: <input type="text" name="first_name_field" placeholder="First Name"></label>
                 </div>
                 <div>
                     <label>Last Name: <input type="text" name="last_name_field" placeholder="Last Name"></label>
                 </div>
+                <div>
+                    <label>Phone Number: <input type="tel" name="phone_field" placeholder="Phone Number"></label>
+                </div>
+                <div>
+                    <label>Email: <input type="email" name="emal_field" placeholder="Email"></label>
+                </div>
+                <div>
+                    <label>Gender:</label>
+                    <label>Female<input type="radio" name="gender_field" value="Female"></label>
+                    <label>Male<input type="radio" name="gender_field" value="Male"></label>
+                    <label>Other<input type="radio" name="gender_field" value="Other"></label>
+                </div>
+                <div>
+                    <label>Age:</label>
+                    <select name="age_field">
+                        <option value="under 18">under 18</option>
+                        <option value="18 - 24">18 - 24</option>
+                        <option value="25 - 34">25 - 34</option>
+                        <option value="35 - 44">35 - 44</option>
+                        <option value="45 - 54">45 - 54</option>
+                        <option value="55 - 64">55 - 64</option>
+                        <option value="65 and over">65 and over</option>
+                    </select>
+                </div>
             </fieldset>
+            <fieldset>
+                <legend><strong>My Availability</strong></legend>
+                <div>
+                    <label>Days Available:</label>
+                    <label><input type="checkbox" name="available_field[]" value="Sunday">Sunday</label>
+                    <label><input type="checkbox" name="available_field[]" value="Monday">Monday</label>
+                    <label><input type="checkbox" name="available_field[]" value="Tuesday">Tuesday</label>
+                    <label><input type="checkbox" name="available_field[]" value="Wednesday">Wednesday</label>
+                    <label><input type="checkbox" name="available_field[]" value="Thursday">Thursday</label>
+                    <label><input type="checkbox" name="available_field[]" value="Friday">Friday</label>
+                    <label><input type="checkbox" name="available_field[]" value="Saturday">Saturday</label>
+                </div>
+                <div>
+                    <label>Any Comments?</label>
+                        <textarea cols="30" rows="3" name="comments_field" placeholder="Any Comments?" id="comments"></textarea>
+                </div>
+                <div>
+                    <input type="hidden" name="hidden_field" value="srobles2">
+                </div>
+                <div>
+                    <button type="submit"><Done</button>
+                </div>
+            </fieldset>
+        </form>
     </body>
 </html>
